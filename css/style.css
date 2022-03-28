@@ -55,6 +55,7 @@ img{display: block;}
       display: flex;
   }
   
+  
 body{
     color: var(--primery-color);
     font-family: 'Roboto';
@@ -463,5 +464,8 @@ color: var(--white-color);
     font-size: 16px;
     line-height: calc(19 / 16);
     color: var(--primery-color);
+}
+.current{
+    color:var(--blue-color);
 }
  
