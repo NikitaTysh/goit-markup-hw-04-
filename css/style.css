@@ -4,6 +4,7 @@
 /* цвет  белый  #FFFFFF */
 /* голубой цвет #2196F3 */
 /* background hero #2F303A */
+/* bg #F5F4FA */
 *,
 *::before,
 *::after {
@@ -15,6 +16,8 @@
     --blue-color:#2196F3;
     --white-color:#ffffff; 
     --background:#2F303A ;
+    --bg:#F5F4FA;
+    --icon-fill:#AFB1B8;
 
 }
 h1, h2, h3, ul, p{
@@ -55,7 +58,8 @@ img{display: block;}
 body{
     color: var(--primery-color);
     font-family: 'Roboto';
-    font-style: normal; 
+    font-size: 14px;
+    letter-spacing: 0.03em;
 } 
 
 /*------- header --------  */
@@ -64,7 +68,6 @@ body{
     display: flex;
 }
 
-
 .header-logo{
     padding: 24px 0px 25px 0px ;
     color: var(--blue-color);
@@ -72,13 +75,12 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     
 }
 .logo-header-studio{
     color: var(--secondary-text);
 }
-/* nav list */
+/*------- nav list -----*/
 
 .nav-container
 {
@@ -90,14 +92,14 @@ body{
     align-items: center;
 }
 .contact-item:not(:first-child),
- .navlist-item:not(:first-child){
+.navlist-item:not(:first-child)
+{
     margin-left: 50px;
 }
 
 .nav-link{
     color: var(--secondary-text);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     cursor: pointer;
@@ -123,12 +125,11 @@ body{
 .contact-link:hover .contact-icon,
 .contact-link:focus .contact-icon
 {
-    fill: #2196F3;
+    fill:var(--blue-color);
 }
 .contact-link{
     color: var(--primery-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     padding: 30px 0;
@@ -148,7 +149,7 @@ body{
     url(../images/hero.jpg);
     background-size:cover;
     background-position:center;
-    background-color:var(--background);
+    background-color:var(--bg);
 
     max-width: 1600px;
     height: 600px;
@@ -201,7 +202,6 @@ body{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
     text-align: center;
 
@@ -212,7 +212,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F5F4FA;
+    background-color: var(--bg);
     border-radius: 4px;
     margin-bottom: 30px;
 }
@@ -223,18 +223,14 @@ body{
 .advantages-title{
 
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-text);
     margin-bottom: 10px;
 }
 .advantages-p{
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color:var(--primery-color);
 }   
 /*---------- we do----- */
@@ -246,13 +242,13 @@ body{
 /* -------team-------- */
 .team-section{
 
-    background: #F5F4FA;
+    background: var(--bg);
 
 }
 .team-item{
     padding-bottom: 30px;
     flex-basis: calc(100% / 4 - 30px);  
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -262,7 +258,6 @@ body{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--secondary-text);
 }
 .team-p{
@@ -270,7 +265,6 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.03em;
     color: var(--primery-color);
     text-align: center;
 }
@@ -282,6 +276,7 @@ body{
     display: flex;
     padding-left: 32px;
     margin-top: 16px;
+
 }
 .social-logo-link
 {   display: flex;
@@ -290,6 +285,7 @@ body{
     border-radius: 50%;
     width: 44px;
     height: 44px;
+    
    
 }
 .social-logo-link:hover .social-logo-svg,
@@ -312,7 +308,7 @@ margin-right: 10px;
 }
 .social-logo-svg{
     
-fill: #AFB1B8;
+fill: var(--icon-fill);
 
 }
 /* ---------clients------------- */
@@ -342,7 +338,7 @@ fill: #AFB1B8;
 .clients-link:hover .clients-svg,
 .clients-link:focus .clients-svg
 {
-    fill: #2196F3;
+    fill: var(--blue-color);
     
 }
 .clients-link:hover ,
@@ -368,11 +364,9 @@ fill: #AFB1B8;
 .footer-logo{
     color: var(--white-color);
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
-    letter-spacing: 0.03em;
     margin-bottom: 20px;
     display: block;
 }
@@ -388,11 +382,8 @@ margin-bottom: 9px;
 }
 .footer-map{
     color:var(--white-color);
-    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-map:hover,
@@ -404,22 +395,18 @@ color: var(--white-color);}
   
 .footer-contact{
 display: block;
-font-style: normal;
 font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
+
 color: rgba(255, 255, 255, 0.6);
 }
 .join{
 
 font-weight: 700;
-font-size: 14px;
 line-height: 16px;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 padding-left: 32px;
-color: #FFFFFF;
+color: var(--white-color);
 
 }
 .footer-join{
@@ -442,13 +429,12 @@ color: var(--white-color);
 .filter-button{
     cursor: pointer;
     padding: 6px 22px;
-    background: #F5F4FA;
+    background: var(--bg);
     border-radius: 4px;
     color: var(--secondary-text);
     font-weight: 500;
     font-size: 16px;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .button-item:not(:last-child)
 {
@@ -470,20 +456,20 @@ color: var(--white-color);
 }
 .works-item-description{
     padding: 20px 24px;
-    border: 1px solid #eeeeee; 
+    border: 1px solid var(--white-color); 
 }
 .works-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--secondary-text);
 }
 .works-p{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.03em;
+
     color: var(--primery-color);
 }
  
