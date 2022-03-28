@@ -456,7 +456,8 @@ color: var(--white-color);
 .works-title{
     font-weight: 700;
     font-size: 18px;
-    line-height: calc(36 / 18);    letter-spacing: 0.06em;
+    line-height: calc(36 / 18);    
+    letter-spacing: 0.06em;
     color: var(--secondary-text);
 }
 .works-p{
