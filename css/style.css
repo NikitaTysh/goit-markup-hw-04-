@@ -339,14 +339,27 @@ fill: #AFB1B8;
 .clients-svg{
     fill: var(--primery-color);
 }
-
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg
+{
+    fill: #2196F3;
+    
+}
+.clients-link:hover ,
+.clients-link:focus 
+{
+   border-color: var(--blue-color);
+    
+}
 
 /* --------footer------------- */
 .footer{
+    display: flex;
     padding: 60px 0;
     background-color: var(--background);
 }
 .footer-container{
+    display: flex;
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
@@ -367,8 +380,11 @@ fill: #AFB1B8;
     color: var(--blue-color);
 }
 .footer-list:nth-last-child()
-{
+{display: block;
 margin-bottom: 9px;
+}
+.footer-item{
+    display: block;
 }
 .footer-map{
     color:var(--white-color);
@@ -395,8 +411,23 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
+.join{
 
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+padding-left: 32px;
+color: #FFFFFF;
+
+}
+.footer-join{
+    margin-left: 35px;
+}
+/* -------------------------- */
 /* -----portfolio page ------*/
+/* -------------------------- */
 .filter-button:hover,
 .filter-button:focus{
 background-color: var(--blue-color);
