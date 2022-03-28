@@ -150,12 +150,11 @@ body{
     background-position:center;
     background-color:var(--background);
 
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
-    display: inline-block;
+    display: block;
     text-align: center;
     padding-bottom : 200px;
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
  
@@ -237,40 +236,7 @@ body{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--primery-color);
-}
-/* -----------our works-------- */
-
-.ourworks-list{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-
-}
-.ourworks-item{
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-}
-.works-item-description{
-    padding: 20px 24px;
-    border: 1px solid #eeeeee; 
-}
-.works-title{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: #212121;
-}
-.works-p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: var(--primery-color);
-}
-    
+}   
 /*---------- we do----- */
 
 .we-do-item{
@@ -349,6 +315,32 @@ margin-right: 10px;
 fill: #AFB1B8;
 
 }
+/* ---------clients------------- */
+
+.clients-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    
+}
+.client-list{
+
+}
+.client-item{
+    
+  flex-basis: calc(100% / 6 - 30px);
+}
+.clients-svg{
+    fill: var(--primery-color);
+}
+
+
 /* --------footer------------- */
 .footer{
     padding: 60px 0;
@@ -403,9 +395,6 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
-.current{
-    color: var(--blue-color);
-}
 
 /* -----portfolio page ------*/
 .filter-button:hover,
@@ -434,3 +423,36 @@ color: var(--white-color);
 {
     margin-right: 8px;;
 }
+/* -----------our works-------- */
+
+.ourworks-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+
+}
+.ourworks-item{
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+.works-item-description{
+    padding: 20px 24px;
+    border: 1px solid #eeeeee; 
+}
+.works-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.works-p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--primery-color);
+}
+ 
