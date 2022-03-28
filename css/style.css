@@ -129,6 +129,8 @@ body{
     fill:var(--blue-color);
 }
 .contact-link{
+    display: flex;
+    align-items: center;
     color: var(--primery-color);
     font-weight: 500;
     line-height: calc(16 / 14);
@@ -472,6 +474,8 @@ color: var(--white-color);
     line-height: calc(19 / 16);
     color: var(--primery-color);
 }
+
 .current{
     color:var(--blue-color);
+
 }
