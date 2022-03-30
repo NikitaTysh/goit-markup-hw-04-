@@ -66,6 +66,7 @@ body{
     font-family: 'Roboto';
     font-size: 14px;
     letter-spacing: 0.03em;
+    background-color: var(--white-color);
 } 
 
 /*------- header --------  */
@@ -241,8 +242,9 @@ margin-right: 30px;
     margin-bottom: 10px;
 }
 .advantages-p{
-    font-weight: 400;
-    line-height: calc(24 / 14);    color:var(--primery-color);
+    
+    line-height: calc(24 / 14);   
+     color:var(--primery-color);
 }   
 /*---------- we do----- */
 .we-do-section{
@@ -280,7 +282,7 @@ margin-right: 30px;
     color: var(--secondary-text);
 }
 .team-p{
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: calc(19 / 16);
     color: var(--primery-color);
@@ -341,7 +343,7 @@ fill: var(--icon-fill);
     justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var( --icon-fill);
     width: 170px;
     height: 92px;
     border-radius: 4px;
@@ -386,7 +388,8 @@ fill: var(--icon-fill);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31 / 26);    margin-bottom: 20px;
+    line-height: calc(31 / 26);   
+     margin-bottom: 20px;
     display: block;
 }
 .footer-logo-web{
@@ -403,7 +406,8 @@ fill: var(--icon-fill);
     
     font-style: normal;
     font-weight: 400;
-    line-height: calc(24 / 14);    color: rgba(255, 255, 255, 0.6);
+    line-height: calc(24 / 14);   
+     color: rgba(255, 255, 255, 0.6);
 }
 .footer-map:hover,
 .footer-contact:hover,
@@ -458,7 +462,6 @@ color: var(--white-color);
     cursor: pointer;
     padding: 6px 22px;
     background: var(--bg);
-    letter-spacing: 0.03em;
     border-radius: 4px;
     color: var(--secondary-text);
     font-weight: 500;
@@ -498,7 +501,7 @@ color: var(--white-color);
     color: var(--secondary-text);
 }
 .works-p{
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: calc(19 / 16);
     color: var(--primery-color);
