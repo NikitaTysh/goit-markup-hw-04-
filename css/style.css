@@ -29,16 +29,15 @@ h1, h2, h3, ul, p{
 img{
     display: block;
     max-width: 100%;
+    height: auto;
 }
 .card-set-item{
-    margin-top: 30px;
     margin-left: 30px;
 }
 
 .card-set-list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
     margin-left: -30px;
 }
 .section{
@@ -152,6 +151,11 @@ body{
 
 /* --------main-------- */
 .hero{
+    padding-top: 200px;
+    padding-bottom : 200px;
+    margin-right: auto;
+    margin-left: auto;
+ 
     background-image: 
     linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
@@ -160,17 +164,15 @@ body{
     background-size:cover;
     background-position:center;
     background-color:var(--bg);
-    padding-top: 200px;
     max-width: 1600px;
     height: 600px;
     display: block;
     text-align: center;
-    padding-bottom : 200px;
-    margin-right: auto;
-    margin-left: auto;
- 
+    
 }
 .hero-title{
+    margin-right: auto;
+    margin-left: auto;  
     text-align: center;
     color:var(--white-color);
     font-weight: 900;
@@ -179,21 +181,22 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    width: 696px;
+    height: 120px;
 }
 .hero-button{
+    border:none;
     cursor: pointer;
     display: inline-block;
-    min-width:200px;
+    min-width: 200px;
     padding: 10px 32px;
-    height: 50px;
     background-color: var(--blue-color);
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
-    color:var(--white-color);
+    color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     text-align: center;
 }
 /*-------- наши преимущества --------*/
@@ -207,6 +210,9 @@ body{
     border: 0;
     clip: rect(0 0 0 0);  
 }
+.our-advantages-section{
+margin-bottom: 94px;
+}
 .section-title{
     color: var(--secondary-text);
     font-weight: 700;
@@ -216,6 +222,7 @@ body{
     text-align: center;
 
 }
+
 .advantages-list{
     display: flex;
 }
@@ -248,7 +255,8 @@ margin-right: 30px;
 }   
 /*---------- we do----- */
 .we-do-section{
-    padding-bottom: 94px;
+padding-top: 0;
+margin-bottom: 94px;
 }
 .we-do-item{
    
@@ -270,10 +278,11 @@ margin-right: 30px;
 }
 .team-description
 {
-    padding: 16px 32px 30px 32px;
+    padding: 30px 32px 30px 32px;
+    border-bottom: 1;
 }
 .team-title{
-    margin-top: 30px;
+    
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -369,10 +378,10 @@ fill: var(--icon-fill);
    border-color: var(--blue-color);
     
 }
-
+/* --------------------------- */
 /* --------footer------------- */
+/* --------------------------- */
 .footer{
-    margin-top: 94px;
     display: flex;
     padding: 60px 0;
     background-color: var(--background);
@@ -395,7 +404,7 @@ fill: var(--icon-fill);
 .footer-logo-web{
     color: var(--blue-color);
 }
-.footer-item:nth-last-child()
+.footer-item:not(:last-child)
 {
        
     margin-bottom: 9px;
@@ -403,7 +412,6 @@ fill: var(--icon-fill);
 
 .footer-map{
 
-    
     font-style: normal;
     font-weight: 400;
     line-height: calc(24 / 14);   
@@ -415,20 +423,17 @@ fill: var(--icon-fill);
 .footer-contact:focus
 {
 color: var(--white-color);}
-  .footer-item + .footer-item
-  {
-     margin-top: 9px;
-  }
+ 
 .footer-contact{
 
-    
     font-style: normal;
     display: block;
     
     line-height: calc(24 / 14);
     color: rgba(255, 255, 255, 0.6);
     }
-    .join{
+
+.join{
     margin-bottom: 20px;
     font-weight: 700;
     line-height: calc(16 / 14);
@@ -446,7 +451,7 @@ color: var(--white-color);}
 }
 /* -------------------------- */
 /* -----portfolio page ------*/
-/* -------------------------- */
+/* ------------------------ */
 .filter-button:hover,
 .filter-button:focus{
 background-color: var(--blue-color);
@@ -473,7 +478,9 @@ color: var(--white-color);
 {
     margin-right: 8px;;
 }
+/* ---------------------------- */
 /* -----------our works-------- */
+/* ---------------------------- */
 
 .ourworks-list{
     display: flex;
@@ -485,6 +492,7 @@ color: var(--white-color);
 .ourworks-item{
   margin-top: 30px;
   margin-left: 30px;
+
   flex-basis: calc(100% / 3 - 30px);
 }
 .works-item-description{
@@ -494,6 +502,8 @@ color: var(--white-color);
     border-bottom: 1px solid var(--filer-border);
 }
 .works-title{
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);    
